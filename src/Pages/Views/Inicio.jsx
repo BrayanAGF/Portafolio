@@ -13,7 +13,7 @@ export const Inicio = () => {
                         <p className="font-bold">Publicación destacada</p>
                     </Grid>
                     <Grid className="flex items-start gap-3">
-                        <Avatar src="../../../assets/images/Perfil2.jpg" className="h-12 w-12" />
+                        <Avatar src="./assets/images/Perfil2.jpg" className="h-12 w-12" />
                         <Grid className="w-5/6">
                             <Grid className="flex gap-2 items-start">
                                 <Grid className="flex sm:gap-0 md:gap-1 items-center">
@@ -29,7 +29,7 @@ export const Inicio = () => {
                             <Grid className="flex justify-center">
                                 <Image
                                     className="h-96 w-96 object-cover"
-                                    src="../../../assets/images/Perfil.jpg"
+                                    src="./assets/images/Perfil.jpg"
                                 />
                             </Grid>
                         </Grid>

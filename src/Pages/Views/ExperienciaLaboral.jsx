@@ -13,7 +13,7 @@ export const ExperienciaLaboral = () => {
                         <p className="font-bold">Publicación destacada</p>
                     </Grid>
                     <Grid className="flex items-start gap-3">
-                        <Avatar src="../../../assets/images/compusoluciones.png" className="h-12 w-12" />
+                        <Avatar src="./assets/images/compusoluciones.png" className="h-12 w-12" />
                         <Grid className="w-5/6">
                             <Grid className="flex gap-2 items-start">
                                 <Grid className="md:flex sm:flex-col md:gap-1 items-center">
@@ -37,7 +37,7 @@ export const ExperienciaLaboral = () => {
             <Card className="mt-3">
                 <CardBody>
                     <Grid className="flex items-start gap-3">
-                        <Avatar src="../../../assets/images/patronLogo.png" className="h-12 w-12 object-cover" />
+                        <Avatar src="./assets/images/patronLogo.png" className="h-12 w-12 object-cover" />
                         <Grid className="w-5/6">
                             <Grid className="flex gap-2 items-start">
                                 <Grid className="md:flex sm:flex-col md:gap-1 items-center">
@@ -64,7 +64,7 @@ export const ExperienciaLaboral = () => {
             <Card className="mt-3">
                 <CardBody>
                     <Grid className="flex items-start gap-3">
-                        <Avatar src="../../../assets/images/itoLogo.jpeg" className="h-12 w-12" />
+                        <Avatar src="./assets/images/itoLogo.jpeg" className="h-12 w-12" />
                         <Grid className="w-5/6">
                             <Grid className="flex gap-2 items-start">
                                 <Grid className="md:flex sm:flex-col md:gap-1 items-center">

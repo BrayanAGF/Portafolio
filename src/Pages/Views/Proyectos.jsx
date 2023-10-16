@@ -25,7 +25,7 @@ export const Proyectos = () => {
               removeWrapper
               alt="Card example background"
               className="z-0 w-full h-full scale-100  object-cover"
-              src="../../../assets/images/tasks.png"
+              src="./assets/images/tasks.png"
             />
             <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
               <div>
@@ -42,7 +42,7 @@ export const Proyectos = () => {
               removeWrapper
               alt="Card example background"
               className="z-0 w-full h-full scale-100 object-cover"
-              src="../../../assets/images/calendar.png"
+              src="./assets/images/calendar.png"
             />
             <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
               <div>
@@ -56,7 +56,7 @@ export const Proyectos = () => {
 
           <Card className="row-span-2 col-span-1" isFooterBlurred>
             <Image
-              src="../../../assets/images/selecta.png"
+              src="./assets/images/selecta.png"
             />
             <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
               <div>
@@ -86,7 +86,7 @@ export const Proyectos = () => {
                   removeWrapper
                   alt="Card example background"
                   className="z-0 w-full h-2/5 scale-100 object-cover"
-                  src={`../../../assets/images/${modalInfo.Img}`}
+                  src={`./assets/images/${modalInfo.Img}`}
                 />
                 <p className="Titulo text-2xl">Acerca de</p>
                 <p className="Titulo">{modalInfo.Descripcion}</p>

@@ -43,10 +43,10 @@ export const Home = () => {
               }}
             >
 
-              <Tab key="Inicio" title="Inicio" className="w-full">
+              <Tab key="Inicio" title="Inicio" >
                 <Inicio />
               </Tab>
-              <Tab key="Proyectos" title="Proyectos" className="w-full">
+              <Tab key="Proyectos" title="Proyectos" >
                 <div id="Proyectos">
                   <Proyectos />
                 </div>

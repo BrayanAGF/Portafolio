@@ -8,7 +8,7 @@ export const Home = () => {
       <Grid width={{xs: '98vw', md: '60vw' }}>
         <iframe src='https://my.spline.design/interactivespherescopy-c3c9b1e90503307749b4751e874a63e2/' frameborder='0' width='100%' height='250px' 
         className="rounded-lg"></iframe>
-        <Avatar src="./../../../assets/images/Perfil2.jpg" className="h-32 w-32 relative bottom-16 left-8" />
+        <Avatar src="./assets/images/Perfil2.jpg" className="h-32 w-32 relative bottom-16 left-8" />
         <Grid className=" relative bottom-14 md:left-8 sm:left-0 sm:w-11/12">
           <Grid className="flex items-center">
             <p className="font-bold text-inherit mr-2 Titulo text-4xl">Brayan Alberto</p>

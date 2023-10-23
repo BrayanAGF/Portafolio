@@ -1,7 +1,11 @@
 import { Grid } from "@mui/material"
 import { Avatar, Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react"
+import { useState } from "react"
 
 export const Inicio = () => {
+
+    const [MeEncanta, setMeEncanta] = useState(false);
+
     return (
         <Grid>
             <Card>
@@ -13,7 +17,7 @@ export const Inicio = () => {
                         <p className="font-bold">Publicación destacada</p>
                     </Grid>
                     <Grid className="flex items-start gap-3">
-                        <Avatar src="./assets/images/Perfil2.jpg" className="h-12 w-12" />
+                        <Avatar src="./assets/images/Perfil2.jpg" className="h-12 w-12"/>
                         <Grid className="w-5/6">
                             <Grid className="flex gap-2 items-start">
                                 <Grid className="flex sm:gap-0 md:gap-1 items-center">
@@ -37,17 +41,17 @@ export const Inicio = () => {
                 </CardBody>
                 <CardFooter className="flex flex-row-reverse gap-1 items-end">
                    
-                        <Button isIconOnly variant="flat">
+                        <Button isIconOnly variant="flat" className={`${MeEncanta && 'text-[red]'} transition-all duration-300`} onClick={() => setMeEncanta(!MeEncanta)}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                             </svg>
                         </Button>
-                        <Button isIconOnly variant="flat">
+                        {/* <Button isIconOnly variant="flat">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
                                 <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
                                 <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
                             </svg>
-                        </Button>
+                        </Button> */}
          
                 </CardFooter>
             </Card>

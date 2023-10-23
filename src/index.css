@@ -5,14 +5,14 @@
 html {
   scroll-behavior: smooth;
 }
+
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Gabarito', sans-serif;
+    overflow-x: hidden;
 }
 
-.Titulo{
-    font-family: 'Gabarito', sans-serif;
-}
 
 /* width */
 ::-webkit-scrollbar {

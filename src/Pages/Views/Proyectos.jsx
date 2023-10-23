@@ -1,5 +1,5 @@
-import { Grid } from "@mui/material"
-import { Button, Card, CardBody, CardFooter, CardHeader, Chip, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react"
+
+import { Button, Card, CardFooter, Chip, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react"
 import { useState } from "react";
 import { Proyectos as Repositorio } from '../../Helpers'
 
@@ -9,17 +9,14 @@ export const Proyectos = () => {
   const [modalInfo, setModalInfo] = useState({});
 
   const abrirModal = (IdProyecto) => {
-    console.log(IdProyecto);
     setModalInfo(Repositorio[IdProyecto]);
     onOpen();
   }
 
   return (
-    <Grid sx={{ display: 'grid', placeItems: 'center' }} >
-      <Grid width={{ md: '60vw' }}>
-       {/*  <h1 className="text-5xl Titulo font-bold">Proyectos</h1> */}
-        <Grid className="grid sm:grid-rows-1 md:grid-rows-2 md:grid-flow-col sm:grid-flow-row gap-2 md:gap-4 my-5">
-
+    <div>
+      <div>
+        <div className="grid sm:grid-rows-1 md:grid-rows-2 md:grid-flow-col sm:grid-flow-row gap-2 md:gap-4 my-5">
           <Card isFooterBlurred className=" col-span-2 row-span-auto">
             <Image
               removeWrapper
@@ -69,8 +66,8 @@ export const Proyectos = () => {
           </Card>
 
 
-        </Grid>
-      </Grid>
+        </div>
+      </div>
 
       <Modal
         isOpen={isOpen}
@@ -91,24 +88,26 @@ export const Proyectos = () => {
                 <p className="Titulo text-2xl">Acerca de</p>
                 <p className="Titulo">{modalInfo.Descripcion}</p>
                 <p className="Titulo text-2xl">Tecnologías usadas</p>
-                <Grid className="flex gap-2">
+                <div className="flex gap-2">
                   {
                     modalInfo.Tecnologias && modalInfo.Tecnologias.map((value, index) => (
                       <Chip key={index} variant="flat" color={value.Color}>{value.Nombre}</Chip>
                     ))
                   }
 
-                </Grid>
+                </div>
               </ModalBody>
               <ModalFooter>
-                <Button color="primary" onPress={onClose}>
-                  Ir a la aplicación
-                </Button>
+                <a href={modalInfo.Link} target="_blank">
+                  <Button color="primary">
+                    Ir a la aplicación
+                  </Button>
+                </a>
               </ModalFooter>
             </>
           )}
         </ModalContent>
       </Modal>
-    </Grid>
+    </div>
   )
 }

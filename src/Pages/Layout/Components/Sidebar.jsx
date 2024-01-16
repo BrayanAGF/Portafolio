@@ -51,7 +51,7 @@ export const Sidebar = () => {
                 </div>
             </div>
 
-            <div className='w-[23%] md:w-[230px] flex justify-around md:justify-start'>
+            <div className='w-[23%] md:w-[230px] flex justify-around md:justify-start pb-0 md:pb-6 '>
                 <Button isIconOnly variant="flat" className="rounded-full bg-transparent" onClick={() => setThemeMode(!themeMode)}>
                     {
                         themeMode

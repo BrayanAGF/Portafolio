@@ -16,13 +16,15 @@ export default {
       "light" : {
         extend: "light",
         colors: {
-          background: "#FFF9FC"
+          background: "#FFF9FC",
+          secondary: "#E5E7EB"
         }
       },
       "dark": {
         extend: "dark",
         colors: {
-          background: "#183D3D",
+          background: "#000000",
+          secondary: "#2F3336"
         }
       }
     }

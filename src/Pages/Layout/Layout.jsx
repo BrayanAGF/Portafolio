@@ -1,11 +1,12 @@
-import { Grid } from "@mui/material"
-import { NavbarPortfolio } from "./Components/Navbar"
+import { Sidebar } from "./Components"
 
-export const Layout = ({children}) => {
+export const Layout = ({ children }) => {
   return (
-    <Grid minHeight='100vh' minWidth='100vw'>
-       <NavbarPortfolio />
+    <div className="min-h-screen min-w-[100vw] flex justify-center">
+      <Sidebar />
+      <div className="md:w-[65%] sm:w-[100%]  md:ml-[20%] border-1 border-t-0 border-secondary">
         {children}
-    </Grid>
+      </div>
+    </div>
   )
 }

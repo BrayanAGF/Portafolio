@@ -36,3 +36,16 @@ body{
     background: grey;
     width: 10px;
   }
+
+  .msgAnim{
+    animation: msgAnimacion 400ms ;
+  }
+
+  @keyframes msgAnimacion {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

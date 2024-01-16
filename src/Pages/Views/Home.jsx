@@ -6,11 +6,10 @@ import { Avatar, Tab, Tabs } from "@nextui-org/react"
 export const Home = () => {
 
   return (
-    <div className="grid place-items-center">
-      <div className="w-screen md:w-8/12 p-1">
-      <iframe src='https://my.spline.design/interactivespherescopy-c3c9b1e90503307749b4751e874a63e2/' frameborder='0' width='100%' height='300px'></iframe>
-        <Avatar src="./assets/images/Perfil2.jpg" className="h-32 w-32 relative bottom-16 left-8" />
-        <div className=" relative bottom-14 md:left-8 sm:left-0 sm:w-11/12">
+    <div className="w-full ">
+      <iframe src='https://my.spline.design/interactivespherescopy-c3c9b1e90503307749b4751e874a63e2/' frameborder='0' width='100%' height='300px' style={{borderRadius: 6}} />
+        <Avatar src="./assets/images/Perfil2.jpg" className="h-32 w-32 relative bottom-16 left-8 border-3 border-background" />
+        <div className="relative bottom-14 md:left-8 sm:left-0 sm:w-11/12">
           <div className="flex items-center">
             <p className="font-bold text-inherit mr-2 Titulo text-4xl">Brayan Alberto</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#80B3FF" className="bi bi-patch-check-fill" viewBox="0 0 16 16">
@@ -33,41 +32,10 @@ export const Home = () => {
               <p>28 de Junio</p>
             </div>
           </div>
-
-
-
-          <div className="flex flex-col mt-2 h-[90vh]">
-            <Tabs aria-label="Options" className="justify-center" 
-              variant="underlined"
-              fullWidth
-              classNames={{
-                tab: "Titulo text-xl",
-              }}
-            >
-
-              <Tab key="Inicio" title="Inicio">
-                <Inicio />
-              </Tab>
-              <Tab key="Proyectos" title="Proyectos" >
-                  <Proyectos />
-              </Tab>
-              <Tab key="Experiencia" title="Experiencia Laboral">
-                <ExperienciaLaboral />
-              </Tab>
-
-              <Tab key="Contacto" title="Contacto" >
-                <Contacto />
-              </Tab>
-            </Tabs>
-          </div>
-
-
-
         </div>
 
+        <Inicio />
 
-
-      </div>
     </div>
   )
 }

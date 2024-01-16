@@ -20,7 +20,7 @@ export const CardPostWithImage = ({ ImgURL, Fecha, Titulo, Contenido, isPD, }) =
                         </div>
                     }
                     <div className="flex gap-1">
-                            <Avatar src="./assets/images/Perfil2.jpg" className="h-12 w-12" />
+                        <Avatar src="./assets/images/Perfil2.jpg" className="h-[47px] w-[50px]" />
                         <div className="w-[94%]">
                             <div className="flex gap-2 items-start">
                                 <div className="flex sm:gap-0 md:gap-1 items-center">
@@ -39,6 +39,9 @@ export const CardPostWithImage = ({ ImgURL, Fecha, Titulo, Contenido, isPD, }) =
                                     className="h-96 w-full object-cover rounded-md cursor-pointer"
                                     src={ImgURL}
                                 />
+                               {/*  <div className="w-[15vw] max-w-[1000px] min-w-[320px]">
+                                    <img className="w-[50%] rounded-md" src={ImgURL}></img>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -51,15 +54,19 @@ export const CardPostWithImage = ({ ImgURL, Fecha, Titulo, Contenido, isPD, }) =
                     </Button>
                 </CardFooter>
             </Card>
-            <Modal isOpen={isOpen} onOpenChange={onOpenChange} 
-            className="w-[4/5] bg-transparent border-none shadow-none max-w-full h-4/5"
-            classNames={{
-                closeButton: "bg-white"
-            }}
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange}
+                backdrop="blur"
+                className="bg-transparent border-none shadow-none max-w-full h-4/5 overflow-x-hidden"
+                classNames={{
+                    closeButton: "bg-white",
+                    backdrop: "bg-zinc-800"
+                }}
             >
-                <ModalContent className="p-4">
-                    <ModalBody className="flex justify-center items-center">
-                        <img  class="h-[500px] w-[100%] object-contain rounded-md" src={ImgURL}></img>
+                <ModalContent className="p-0">
+                    <ModalBody className="p-0">
+                        <div className="w-[96vw] max-w-[1000px] min-w-[320px] m-auto">
+                            <img className="w-[100%] rounded-md" src={ImgURL}></img>
+                        </div>
                     </ModalBody>
                 </ModalContent>
             </Modal>

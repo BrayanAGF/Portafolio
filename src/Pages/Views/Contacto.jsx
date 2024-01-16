@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+
 import { CardPost, FormularioContacto } from './Components'
 import { useMensajes } from '../../Hooks'
 
@@ -21,6 +21,7 @@ export const Contacto = () => {
                         css='animate__animated animate__headShake'
                         Nombre={item.Nombre}
                         Fecha={item.Fecha}
+                        ImgPURL="https://xsgames.co/randomusers/avatar.php?g=male"
                         Contenido={
                             <>
                                 <p>{item.Mensaje}</p>

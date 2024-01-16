@@ -16,39 +16,43 @@ export const Sidebar = () => {
     }, [themeMode])
 
     return (
-        <div className='hidden  md:flex md:flex-col w-[25%] h-[95%] pt-2 justify-between items-center fixed left-[5%]'>
-            <div className="mt-4">
-                <Briefcase className="ml-1 w-[32px] h-[32px]"></Briefcase>
-                <div className='w-[230px] mt-2'>
+        <div
+            className={`
+                flex fixed sm:flex-row w-screen sm:h-[50px] -bottom-1 z-30 bg-secondary
+                md:flex-col md:w-[20%] md:h-[95%] md:pt-2 md:justify-between md:items-center md:left-[6%] md:bg-transparent`
+            }>
+            <div className="mt-0 md:mt-4 w-full">
+                <Briefcase className="ml-1 w-[32px] h-[32px] hidden"></Briefcase>
+                <div className='md:w-[230px] mt-0 md:mt-2 flex flex-row justify-around md:flex-col'>
                     <Link to='/*'>
                         <div className='flex gap-2 items-center'>
                             <Home className="w-[42px] h-[42px]" />
-                            <p>Inicio</p>
+                            <p className='hidden md:inline'>Inicio</p>
                         </div>
                     </Link>
                     <Link to='/Proyectos'>
                         <div className='flex gap-2 items-center'>
                             <Proyectos className="w-[42px] h-[42px]" />
-                            <p>Proyectos</p>
+                            <p className='hidden md:inline'>Proyectos</p>
                         </div>
                     </Link>
                     <Link to='/Experiencia'>
                         <div className='flex gap-2 items-center'>
                             <Experiencia className="w-[42px] h-[42px]" />
-                            <p>Experiencia laboral</p>
+                            <p className='hidden md:inline'>Experiencia laboral</p>
                         </div>
                     </Link>
                     <Link to='/Contacto'>
                         <div className='flex gap-2 items-center'>
                             <Contacto className="w-[42px] h-[42px]" />
-                            <p>Contacto</p>
+                            <p className='hidden md:inline'>Contacto</p>
                         </div>
                     </Link>
                 </div>
             </div>
 
-            <div className='w-[230px]'>
-                <Button isIconOnly variant="flat" className="rounded-full" onClick={() => setThemeMode(!themeMode)}>
+            <div className='w-[23%] md:w-[230px] flex justify-around md:justify-start'>
+                <Button isIconOnly variant="flat" className="rounded-full bg-transparent" onClick={() => setThemeMode(!themeMode)}>
                     {
                         themeMode
                             ?
